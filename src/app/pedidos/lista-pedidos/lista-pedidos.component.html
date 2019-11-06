@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let pedido of pedidos" class="card col">
+      <div class="card-body row">
+        <h5 class="card-title col-3" >{{pedido.numPedido}}</h5>
+        <span class="badge col-9 badge-info" style="font-size:25px">Tipo:{{pedido.tipopedido}}</span>
+        <img class="col-2" style="object-fit: cover;" src="https://img.icons8.com/nolan/64/000000/cancel-2.png">
+        <div class="offset-1 mt-1">
+          <p class="m-0">Fecha de Generacion:{{pedido.fechageneracion}}</p>
+          <p class="m-0" >Observacion:{{pedido.observacion}}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
